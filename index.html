@@ -116,29 +116,29 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
 @media(max-width:900px){.pairs{grid-template-columns:1fr}}
 
 /* ---------- lights: the one dark section, because the photos are night shots ---------- */
-.lights{background:var(--green-deep);color:#fff}
+.lights{background:var(--ink);color:#fff}
 .lights h2{color:#fff}
 .lights .lede{color:rgba(255,255,255,.68)}
 .grid-lights{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin-top:2.4rem}
-.grid-lights figure{margin:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#101715}
+.grid-lights figure{margin:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#16382A}
 .grid-lights img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
 .grid-lights figure:hover img{transform:scale(1.06)}
 .grid-lights .tall{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
 @media(max-width:900px){.grid-lights{grid-template-columns:repeat(2,1fr)}.grid-lights .tall{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
 
 /* ---------- contact ---------- */
-.contact{text-align:center;background:var(--green-mid);color:#fff}
+.contact{text-align:center;background:var(--orange);color:#fff}
 .contact h2{color:#fff}
-.contact h2::after{background:var(--orange)}
-.contact h2 em{color:var(--orange)}
+.contact h2::after{background:#fff}
+.contact h2 em{color:var(--ink)}
 .contact .eyebrow{color:rgba(255,255,255,.8)}
 .contact .lede{color:rgba(255,255,255,.9)}
 .contact .lede{margin:.9rem auto 0}
-.phone{display:inline-block;font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5.2vw,3.2rem);letter-spacing:-.03em;color:var(--orange);text-decoration:none;margin:1.6rem 0 .25rem}
-.phone:hover{color:#fff}
+.phone{display:inline-block;font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5.2vw,3.2rem);letter-spacing:-.03em;color:#fff;text-decoration:none;margin:1.6rem 0 .25rem}
+.phone:hover{color:var(--ink)}
 .contact-note{font-size:.85rem;color:rgba(255,255,255,.78)}
 
-footer{background:var(--green-deep);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
+footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
 .foot-in{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
 .foot-brand{display:flex;align-items:center;gap:.65rem}
 .foot-brand img{height:52px;width:auto}
