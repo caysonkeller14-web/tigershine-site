@@ -15,8 +15,9 @@
   /* sampled directly from the logo */
   --ink:#1B4433;
   --green-mid:#27604A;
-  --orange:#ED6101;
-  --orange-deep:#C44E01;
+  --green-deep:#141D1A;
+  --orange:#F2670A;
+  --orange-deep:#C9520A;
   --cream:#E3D5B8;
   --paper:#FFFFFF;
   --muted:#5F6459;
@@ -49,13 +50,13 @@ h3{font-weight:800;font-size:1.3rem}
 .nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:3px solid var(--orange)}
 .nav-in{display:flex;align-items:center;gap:2rem;height:76px}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
-.brand img{height:52px;width:auto}
+.brand img{height:60px;width:auto}
 .brand-txt{font-family:var(--display);font-weight:900;font-size:1.12rem;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase;line-height:1}
 .brand-sub{display:block;font-family:var(--body);font-weight:500;font-size:.66rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.18rem}
 .nav-links{display:flex;gap:1.8rem}
 .nav-links a{font-size:.88rem;font-weight:500;color:var(--muted);text-decoration:none}
 .nav-links a:hover{color:var(--ink)}
-@media(max-width:860px){.nav-links{display:none}.brand-txt{display:none}.brand img{height:46px}.nav-in{height:68px}}
+@media(max-width:860px){.nav-links{display:none}.brand-txt{display:none}.brand img{height:52px}.nav-in{height:68px}}
 
 /* ---------- hero on white ---------- */
 .hero{padding:clamp(2.8rem,6vw,4.8rem) 0 clamp(2.6rem,5vw,3.6rem);background:var(--cream)}
@@ -115,11 +116,11 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
 @media(max-width:900px){.pairs{grid-template-columns:1fr}}
 
 /* ---------- lights: the one dark section, because the photos are night shots ---------- */
-.lights{background:var(--ink);color:#fff}
+.lights{background:var(--green-deep);color:#fff}
 .lights h2{color:#fff}
 .lights .lede{color:rgba(255,255,255,.68)}
 .grid-lights{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin-top:2.4rem}
-.grid-lights figure{margin:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#16382A}
+.grid-lights figure{margin:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#101715}
 .grid-lights img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
 .grid-lights figure:hover img{transform:scale(1.06)}
 .grid-lights .tall{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
@@ -137,10 +138,10 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
 .phone:hover{color:#fff}
 .contact-note{font-size:.85rem;color:rgba(255,255,255,.78)}
 
-footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
+footer{background:var(--green-deep);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
 .foot-in{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
 .foot-brand{display:flex;align-items:center;gap:.65rem}
-.foot-brand img{height:42px;width:auto}
+.foot-brand img{height:52px;width:auto}
 footer a{color:rgba(255,255,255,.8);text-decoration:none}
 footer a:hover{color:#fff}
 
