@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PREVIEW · Green-forward — Tigershine — Pressure Washing, Window Cleaning &amp; Christmas Lights | Auburn &amp; Opelika, AL</title>
+<meta name="description" content="Pressure washing, window cleaning, and Christmas light installation for homes in Auburn and Opelika, Alabama. Free quotes. Call or text 334-315-6784.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* sampled directly from the logo */
+  --ink:#0F3123;
+  --green-mid:#1C4E37;
+  --green-soft:#E4EEE6;
+  --orange:#ED6101;
+  --orange-deep:#C44E01;
+  --cream:#E4EEE6;
+  --paper:#F3F8F4;
+  --muted:#54655B;
+  --rule:rgba(15,49,35,.14);
+  --wrap:1180px;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.62}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.03;letter-spacing:-.022em}
+h1{font-weight:900;font-size:clamp(2.5rem,6vw,4.4rem);text-transform:uppercase}
+h2{font-weight:800;font-size:clamp(1.85rem,3.8vw,2.9rem);text-transform:uppercase}
+h3{font-weight:800;font-size:1.3rem}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;color:var(--orange);margin:0}
+.lede{font-size:1.06rem;color:var(--muted);max-width:47ch}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:800;font-size:.93rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;padding:.92rem 1.65rem;border-radius:4px;transition:background .18s,transform .18s,color .18s,border-color .18s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-deep);transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--rule);color:var(--ink)}
+.btn-outline:hover{border-color:var(--ink)}
+.btn-sm{padding:.6rem 1.05rem;font-size:.8rem}
+
+/* ---------- nav: white, so the logo badge carries the colour ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:3px solid var(--orange)}
+.nav-in{display:flex;align-items:center;gap:2rem;height:76px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
+.brand img{height:52px;width:auto}
+.brand-txt{font-family:var(--display);font-weight:900;font-size:1.12rem;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase;line-height:1}
+.brand-sub{display:block;font-family:var(--body);font-weight:500;font-size:.66rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.18rem}
+.nav-links{display:flex;gap:1.8rem}
+.nav-links a{font-size:.88rem;font-weight:500;color:var(--muted);text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+@media(max-width:860px){.nav-links{display:none}.brand-txt{display:none}.brand img{height:46px}.nav-in{height:68px}}
+
+/* ---------- hero on white ---------- */
+.hero{padding:clamp(2.8rem,6vw,4.8rem) 0 clamp(2.6rem,5vw,3.6rem);background:linear-gradient(180deg,var(--cream) 0%,#fff 88%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:940px){.hero-grid{grid-template-columns:1fr;gap:2.3rem}}
+.hero h1{margin:.8rem 0 1rem}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.hero-meta{margin-top:1.5rem;font-size:.82rem;color:var(--muted);letter-spacing:.02em}
+
+/* ---------- signature: before/after slider ---------- */
+.ba{position:relative;border-radius:6px;overflow:hidden;background:var(--paper);user-select:none;box-shadow:0 18px 44px rgba(15,49,35,.16)}
+.ba>img{width:100%;height:auto}
+.ba-before{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--orange);transform:translateX(-1px);pointer-events:none}
+.ba-grip{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--orange);display:grid;place-items:center;box-shadow:0 3px 14px rgba(15,49,35,.4)}
+.ba-grip svg{width:21px;height:21px;fill:#fff}
+.ba-tag{position:absolute;bottom:13px;font-family:var(--display);font-weight:800;font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:rgba(15,49,35,.74);padding:.32rem .6rem;border-radius:3px;pointer-events:none;backdrop-filter:blur(4px)}
+.ba-tag-l{left:13px}
+.ba-tag-r{right:13px}
+.ba-range{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;appearance:none;background:none}
+.ba-range:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.ba-cap{margin-top:.75rem;font-size:.83rem;color:var(--muted);text-align:center}
+
+section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
+.sec-head{max-width:58ch;margin-bottom:2.6rem}
+.contact h2::after{margin-left:auto;margin-right:auto}
+.sec-head h2{margin:.65rem 0 .85rem}
+h1 em,h2 em{font-style:normal;color:var(--orange)}
+.sec-head h2::after{content:"";display:block;width:54px;height:4px;background:var(--orange);margin-top:1.05rem;border-radius:2px}
+
+/* ---------- trust band: light, orange only as tiny marks ---------- */
+.band{background:var(--green-mid);padding:1.15rem 0}
+.band-in{display:flex;flex-wrap:wrap;gap:.7rem 2.4rem;justify-content:center;align-items:center;font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:#fff}
+.band-in span{display:inline-flex;align-items:center;gap:.55rem}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--orange);flex:none}
+
+/* ---------- services ---------- */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+@media(max-width:900px){.svc{grid-template-columns:1fr}}
+.card{position:relative;border-radius:6px;overflow:hidden;min-height:400px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.65rem;color:#fff;isolation:isolate}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,49,35,.05) 28%,rgba(15,49,35,.88) 100%)}
+.card:hover img{transform:scale(1.05)}
+.card h3{margin-bottom:.45rem}
+.card p{margin:0;font-size:.93rem;color:rgba(255,255,255,.82)}
+.card-num{position:absolute;top:1.35rem;left:1.65rem;font-family:var(--display);font-weight:800;font-size:.66rem;letter-spacing:.14em;color:#fff;background:var(--orange);padding:.34rem .7rem;border-radius:3px}
+/* windows: no photo yet, so a light bordered panel instead of a grey placeholder */
+.card-flat{background:#fff;border:1px solid rgba(28,78,55,.28);color:var(--ink);justify-content:flex-end}
+.card-flat::after{display:none}
+.card-flat p{color:var(--muted)}
+.card-flat .rule{width:36px;height:3px;background:var(--orange);margin-bottom:1rem}
+
+.tint{background:var(--cream)}
+.work{background:var(--paper)}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:900px){.pairs{grid-template-columns:1fr}}
+
+/* ---------- lights: the one dark section, because the photos are night shots ---------- */
+.lights{background:var(--ink);color:#fff}
+.lights h2{color:#fff}
+.lights .lede{color:rgba(255,255,255,.68)}
+.grid-lights{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin-top:2.4rem}
+.grid-lights figure{margin:0;border-radius:5px;overflow:hidden;aspect-ratio:4/3;background:#0C2A1D}
+.grid-lights img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.grid-lights figure:hover img{transform:scale(1.06)}
+.grid-lights .tall{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+@media(max-width:900px){.grid-lights{grid-template-columns:repeat(2,1fr)}.grid-lights .tall{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
+
+/* ---------- contact ---------- */
+.contact{text-align:center;background:var(--green-mid);color:#fff}
+.contact h2{color:#fff}
+.contact h2::after{background:var(--orange)}
+.contact h2 em{color:var(--orange)}
+.contact .eyebrow{color:rgba(255,255,255,.8)}
+.contact .lede{color:rgba(255,255,255,.9)}
+.contact .lede{margin:.9rem auto 0}
+.phone{display:inline-block;font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5.2vw,3.2rem);letter-spacing:-.03em;color:var(--orange);text-decoration:none;margin:1.6rem 0 .25rem}
+.phone:hover{color:#fff}
+.contact-note{font-size:.85rem;color:rgba(255,255,255,.78)}
+
+footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
+.foot-in{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+.foot-brand{display:flex;align-items:center;gap:.65rem}
+.foot-brand img{height:42px;width:auto}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+footer a:hover{color:#fff}
+
+.winter-only{display:none}
+body.season-winter .summer-only{display:none}
+body.season-winter .winter-only{display:block}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .card img,.grid-lights img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<div style="background:#0F3123;color:#fff;font-family:Inter,sans-serif;font-size:.78rem;text-align:center;padding:.55rem 1rem">Preview — green-forward · <a href="/preview-forest-orange.html" style="color:#ED6101">lighter green version</a> · <a href="/" style="color:#ED6101">live site</a></div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <img src="img/g-forestorange.png" alt="Tigershine">
+      <span class="brand-txt">Tigershine<span class="brand-sub">Auburn &amp; Opelika, AL</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#lights">Christmas lights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="tel:3343156784">Call 334-315-6784</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Auburn &amp; Opelika, Alabama</p>
+
+      <div class="summer-only">
+        <h1>We don't stop<br>until it <em>shines</em></h1>
+        <p class="lede">Pressure washing, window cleaning, and Christmas lights for homes around Auburn and Opelika. Locally owned and run.</p>
+      </div>
+
+      <div class="winter-only">
+        <h1>Light up<br>the <em>season</em></h1>
+        <p class="lede">Professional Christmas light installation for homes around Auburn and Opelika. Rooflines, gables, wreaths, and shrubs — put up in the fall and taken down after the season.</p>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:3343156784">Get a free quote</a>
+        <a class="btn btn-outline" href="#work">See our work</a>
+      </div>
+      <p class="hero-meta">Free estimates · Text or call · Serving Auburn &amp; Opelika</p>
+    </div>
+
+    <div>
+      <div class="summer-only">
+        <div class="ba" data-ba style="--pos:50%">
+          <img src="img/hero-after.jpg" alt="A residential sidewalk in Auburn after pressure washing, the concrete restored to an even light tan">
+          <img class="ba-before" src="img/hero-before.jpg" alt="The same sidewalk before pressure washing, darkened with dirt and organic staining">
+          <div class="ba-line"><span class="ba-grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6L3 12l6 6zM15 6l6 6-6 6z"/></svg></span></div>
+          <span class="ba-tag ba-tag-l">Before</span>
+          <span class="ba-tag ba-tag-r">After</span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the sidewalk before and after pressure washing">
+        </div>
+        <p class="ba-cap">Same sidewalk, same afternoon. Drag the slider.</p>
+      </div>
+      <div class="winter-only">
+        <img src="img/lights-hero.jpg" alt="A large white brick home at dusk with warm white roofline lights and lit wreaths in every window" style="border-radius:6px;box-shadow:0 18px 44px rgba(15,49,35,.16)">
+        <p class="ba-cap">Roofline, gables, and wreaths — installed by Tigershine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap band-in">
+    <span><i class="dot"></i>Free quotes</span>
+    <span><i class="dot"></i>Locally owned</span>
+    <span><i class="dot"></i>Christmas lights taken down for you</span>
+    <span><i class="dot"></i>Text or call 334-315-6784</span>
+  </div>
+</div>
+
+<section id="services" class="tint">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">What we do</p>
+      <h2>Three services,<br><em>one standard</em></h2>
+      <p class="lede">Everything we take on gets finished properly — no half-cleaned corners, no stripes down the middle of your driveway.</p>
+    </div>
+
+    <div class="svc">
+      <article class="card rv">
+        <img src="img/action.jpg" alt="A twenty-inch surface cleaner mid-pass, with a sharp line between the dirty concrete and the cleaned strip behind it">
+        <span class="card-num">Pressure washing</span>
+        <h3>Driveways, sidewalks &amp; patios</h3>
+        <p>We run a 20-inch surface cleaner on flat concrete, so you get an even finish across the whole slab instead of wand stripes.</p>
+      </article>
+
+      <article class="card card-flat rv">
+        <span class="card-num">Window cleaning</span>
+        <div>
+          <div class="rule"></div>
+          <h3>Glass, inside and out</h3>
+          <p>Booking window cleaning now around Auburn and Opelika. Give us a call and we'll come measure up and quote it.</p>
+          <a class="btn btn-primary btn-sm" href="tel:3343156784" style="margin-top:1.15rem">Request a quote</a>
+        </div>
+      </article>
+
+      <article class="card rv">
+        <img src="img/lights-2.jpg" alt="A large cream brick home at dusk lined with warm white roofline lights and a lit wreath over the entry">
+        <span class="card-num">Christmas lights</span>
+        <h3>Roofline, gables &amp; wreaths</h3>
+        <p>Design, install, and takedown after the season — you never get on a ladder. Booking opens in the fall and the good weekends go early.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Our work</p>
+      <h2>Drag to see<br><em>the difference</em></h2>
+      <p class="lede">Real jobs around Auburn — no stock photos, no staging. Pull each slider across to compare.</p>
+    </div>
+
+    <div class="pairs">
+      <div class="rv">
+        <div class="ba" data-ba style="--pos:50%">
+          <img src="img/walk-after.jpg" alt="A curved front walkway after cleaning, the concrete an even pale tan from edge to edge">
+          <img class="ba-before" src="img/walk-before.jpg" alt="The same curved walkway before cleaning, grey and blotched with organic growth">
+          <div class="ba-line"><span class="ba-grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6L3 12l6 6zM15 6l6 6-6 6z"/></svg></span></div>
+          <span class="ba-tag ba-tag-l">Before</span>
+          <span class="ba-tag ba-tag-r">After</span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the front walkway before and after cleaning">
+        </div>
+        <p class="ba-cap">Front walkway — Auburn</p>
+      </div>
+
+      <div class="rv">
+        <div class="ba" data-ba style="--pos:50%">
+          <img src="img/street-after.jpg" alt="A neighborhood sidewalk after cleaning, restored to a uniform light finish">
+          <img class="ba-before" src="img/street-before.jpg" alt="The same neighborhood sidewalk before cleaning, streaked and darkened along the curb">
+          <div class="ba-line"><span class="ba-grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6L3 12l6 6zM15 6l6 6-6 6z"/></svg></span></div>
+          <span class="ba-tag ba-tag-l">Before</span>
+          <span class="ba-tag ba-tag-r">After</span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the neighborhood sidewalk before and after cleaning">
+        </div>
+        <p class="ba-cap">Street sidewalk — Auburn</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lights" class="lights">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Seasonal</p>
+      <h2>Christmas light<br><em>installation</em></h2>
+      <p class="lede">Rooflines, gables, wreaths, and shrub lighting on homes across Auburn and Opelika. We hang them in the fall and come back for them after the season — the ladder work is all ours.</p>
+    </div>
+
+    <div class="grid-lights rv">
+      <figure class="tall"><img src="img/lights-hero.jpg" alt="A white brick home at dusk with roofline lights, lit wreaths in five windows, and uplighting across the landscaping"></figure>
+      <figure><img src="img/lights-1.jpg" alt="A two-storey brick home at night with roofline lights and net-lit shrubs across the front beds"></figure>
+      <figure><img src="img/lights-3.jpg" alt="A large brick home at night outlined along every roof angle with warm white lights and lit wreaths"></figure>
+      <figure><img src="img/lights-4.jpg" alt="A brick home at night with lights along the gable and lit wreaths on the gable and chimney"></figure>
+      <figure><img src="img/lights-2.jpg" alt="A cream brick home at dusk with roofline lighting running the length of the house and garage"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Free quote,<br><em>no pressure</em></h2>
+    <p class="lede">Tell us what needs cleaning and we'll come take a look. Serving Auburn, Opelika, and the surrounding area.</p>
+    <a class="phone" href="tel:3343156784">334-315-6784</a>
+    <p class="contact-note">Call or text — whichever's easier.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="foot-brand"><img src="img/g-forestorange.png" alt="">© <span id="yr">2026</span> Tigershine · Auburn &amp; Opelika, AL</span>
+    <span><a href="tel:3343156784">334-315-6784</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Christmas lights lead the page from October 1 through December 31.
+  if (new Date().getMonth() >= 9) document.body.classList.add('season-winter');
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('[data-ba]').forEach(function(ba){
+    var range = ba.querySelector('.ba-range');
+    function set(){ ba.style.setProperty('--pos', range.value + '%'); }
+    range.addEventListener('input', set);
+    set();
+  });
+
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
