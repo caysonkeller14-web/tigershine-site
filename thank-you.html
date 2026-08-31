@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanks — we'll be in touch | Tiger Shine</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Your quote request was received. Tiger Shine will get back to you shortly.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B4433;
+  --green-deep:#141D1A;
+  --orange:#F2670A;
+  --orange-deep:#C9520A;
+  --cream:#E3D5B8;
+  --muted:#5F6459;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:var(--body);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.62}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:3px solid var(--orange)}
+.nav-in{display:flex;align-items:center;gap:2rem;height:76px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
+.brand img{height:60px;width:auto}
+.brand-txt{font-family:var(--display);font-weight:900;font-size:1.12rem;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase;line-height:1}
+.brand-sub{display:block;font-family:var(--body);font-weight:500;font-size:.66rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.18rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:800;font-size:.8rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;padding:.6rem 1.05rem;border-radius:4px;background:var(--orange);color:#fff;transition:background .18s,transform .18s}
+.btn:hover{background:var(--orange-deep);transform:translateY(-2px);color:#fff}
+@media(max-width:860px){.brand-txt{display:none}.brand img{height:52px}.nav-in{height:68px}}
+
+main{flex:1;display:flex;align-items:center;background:var(--cream)}
+.panel{padding:clamp(3rem,8vw,5.5rem) 0;text-align:center}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;color:var(--orange);margin:0}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase;letter-spacing:-.022em;margin:.7rem 0 .6rem;line-height:1.05}
+.lede{font-size:1.06rem;color:var(--muted);max-width:52ch;margin:0 auto 2rem}
+.lede strong{color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.btn-lg{font-size:.93rem;padding:.92rem 1.65rem}
+.btn-ink{background:var(--ink)}
+.btn-ink:hover{background:var(--green-deep)}
+
+footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
+.foot-in{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+.foot-brand{display:flex;align-items:center;gap:.65rem}
+.foot-brand img{height:52px;width:auto}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+footer a:hover{color:#fff}
+.foot-links a{margin-left:1.2rem}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/">
+      <img src="img/logo-brand.png" alt="Tiger Shine">
+      <span class="brand-txt">Tigershine<span class="brand-sub">Auburn &amp; Opelika, AL</span></span>
+    </a>
+    <a class="btn" href="tel:3345424044">Call 334-542-4044</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap panel">
+    <p class="eyebrow">Request received</p>
+    <h1>Thanks — we'll<br>be in touch</h1>
+    <p class="lede">We've got your details and someone from <strong>Tiger Shine</strong> will get back to you shortly. If you opted in to text messages, your first message will come from <strong>334-542-4044</strong>.</p>
+    <div class="cta">
+      <a class="btn btn-lg" href="/">Back to home</a>
+      <a class="btn btn-lg btn-ink" href="tel:3345424044">Call 334-542-4044</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="foot-brand"><img src="img/logo-brand.png" alt="">© <span id="yr">2026</span> Tigershine · Auburn &amp; Opelika, AL</span>
+    <span class="foot-links"><a href="tel:3345424044">334-542-4044</a><a href="/privacy.html">Privacy</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
