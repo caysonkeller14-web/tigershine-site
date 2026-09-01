@@ -5,96 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy &amp; Messaging Terms | Tiger Shine</title>
 <meta name="description" content="Tiger Shine's combined Privacy Policy and Messaging Terms and Conditions — what data we collect when you opt in to text messages, how we use it, and how to opt out.">
-<link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="canonical" href="https://tigershineservices.com/privacy.html">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#1B4433;
-  --green-mid:#27604A;
-  --orange:#F2670A;
-  --orange-deep:#C9520A;
-  --cream:#E3D5B8;
-  --muted:#5F6459;
-  --rule:rgba(27,68,51,.15);
-  --wrap:1180px;
-  --display:'Archivo',system-ui,sans-serif;
-  --body:'Inter',system-ui,sans-serif;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:var(--body);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.68}
-img{display:block;max-width:100%}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
-.narrow{max-width:74ch}
-
-h1,h2{font-family:var(--display);margin:0;line-height:1.05;letter-spacing:-.022em}
-h1{font-weight:900;font-size:clamp(2rem,4.6vw,3rem);text-transform:uppercase}
-h2{font-weight:800;font-size:1.28rem;text-transform:uppercase;margin:2.4rem 0 .5rem}
-h2::after{content:"";display:block;width:44px;height:4px;background:var(--orange);margin-top:.85rem;border-radius:2px}
-p{margin:0 0 1rem}
-ul{margin:0 0 1.2rem;padding-left:1.2rem}
-li{margin-bottom:.45rem}
-ol{margin:0 0 1.2rem;padding-left:1.3rem}
-ol li{margin-bottom:.9rem}
-a{color:var(--orange-deep)}
-a:hover{color:var(--orange)}
-.eyebrow{font-family:var(--display);font-weight:700;font-size:.73rem;letter-spacing:.19em;text-transform:uppercase;color:var(--orange);margin:0}
-
-.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:3px solid var(--orange)}
-.nav-in{display:flex;align-items:center;gap:2rem;height:76px}
-.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-right:auto}
-.brand img{height:60px;width:auto}
-.brand-txt{font-family:var(--display);font-weight:900;font-size:1.12rem;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase;line-height:1}
-.brand-sub{display:block;font-family:var(--body);font-weight:500;font-size:.66rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:.18rem}
-.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:800;font-size:.8rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;padding:.6rem 1.05rem;border-radius:4px;background:var(--orange);color:#fff;transition:background .18s,transform .18s}
-.btn:hover{background:var(--orange-deep);transform:translateY(-2px);color:#fff}
-@media(max-width:860px){.brand-txt{display:none}.brand img{height:52px}.nav-in{height:68px}}
-
-.head{background:var(--cream);padding:clamp(2.4rem,5vw,3.6rem) 0}
-.head h1{margin:.7rem 0 .5rem}
-.updated{font-size:.87rem;color:var(--muted);margin:0}
-
-.body-copy{padding:clamp(2.4rem,5vw,3.4rem) 0 clamp(3rem,6vw,4.4rem)}
-.callout{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--orange);border-radius:5px;padding:1.1rem 1.3rem;margin:1.6rem 0}
-.callout p{margin:0}
-.back{display:inline-block;margin-top:2.6rem;font-family:var(--display);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:.15rem}
-.back:hover{color:var(--orange-deep)}
-
-footer{background:var(--ink);color:rgba(255,255,255,.55);padding:2.4rem 0;font-size:.84rem}
-.foot-in{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
-.foot-brand{display:flex;align-items:center;gap:.65rem}
-.foot-brand img{height:52px;width:auto}
-footer a{color:rgba(255,255,255,.8);text-decoration:none}
-footer a:hover{color:#fff}
-.foot-links a{margin-left:1.2rem}
-</style>
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="/">
-      <img src="img/logo-brand.png" alt="Tiger Shine">
-      <span class="brand-txt">Tiger Shine<span class="brand-sub">Auburn · Opelika · Lake Martin</span></span>
+      <img src="/img/logo-brand.png" alt="Tiger Shine" width="60" height="60">
+      <span class="brand-txt">Tiger Shine<span class="brand-sub">Auburn &amp; Opelika, AL</span></span>
     </a>
-    <a class="btn" href="tel:3345424044">Call 334-542-4044</a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="/services.html">Services</a>
+      <a href="/gallery.html">Our work</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm nav-cta" href="tel:3345424044">Call 334-542-4044</a>
+    </nav>
   </div>
 </header>
 
 <main>
 
-<section class="head">
-  <div class="wrap narrow">
+<section class="subhero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Privacy</p>
     <p class="eyebrow">Legal</p>
     <h1>Privacy Policy &amp; Messaging Terms</h1>
     <p class="updated">Last updated August 31, 2026</p>
   </div>
 </section>
 
-<section class="body-copy">
-  <div class="wrap narrow">
+<section class="paper">
+  <div class="wrap legal">
 
     <p>Tiger Shine (doing business as Tiger Shine) ("we," "us," "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how Tiger Shine collects and uses information about you when you opt in to receive SMS messages from us.</p>
 
@@ -141,12 +92,47 @@ footer a:hover{color:#fff}
 </main>
 
 <footer>
-  <div class="wrap foot-in">
-    <span class="foot-brand"><img src="img/logo-brand.png" alt="">© <span id="yr">2026</span> Tiger Shine · Auburn, Opelika &amp; Lake Martin, AL</span>
-    <span class="foot-links"><a href="tel:3345424044">334-542-4044</a><a href="/privacy.html">Privacy</a></span>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <img class="foot-brand" src="/img/logo-brand.png" alt="Tiger Shine" width="52" height="52">
+        <p>Pressure washing, house washing, window cleaning &amp; Christmas lights.</p>
+        <p>Auburn · Opelika · Lake Martin, AL</p>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="/services.html">Services</a>
+        <a href="/gallery.html">Our work</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="/services.html#pressure-washing">Pressure washing</a>
+        <a href="/services.html#house-washing">House washing</a>
+        <a href="/services.html#window-cleaning">Window cleaning</a>
+        <a href="/services.html#christmas-lights">Christmas lights</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="tel:3345424044">334-542-4044</a>
+        <a href="mailto:contact@tigershineservices.com">contact@tigershineservices.com</a>
+        <p><span class="ph">[Mon–Sat, 8am–6pm]</span></p>
+        <p><span class="ph">[Typically replies same day]</span></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Tiger Shine · Auburn, Opelika &amp; Lake Martin, AL</span>
+      <span><a href="/privacy.html">Privacy Policy &amp; Messaging Terms</a></span>
+    </div>
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<div class="callbar">
+  <a class="call" href="tel:3345424044">Call 334-542-4044</a>
+  <a class="text" href="sms:+13345424044">Text us</a>
+</div>
+
+<script src="/js/site.js" defer></script>
 </body>
 </html>
