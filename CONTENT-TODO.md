@@ -44,7 +44,13 @@ the text stops being highlighted.
 - [ ] Accepted payment methods + timing / deposit policy (FAQ on both pages)
 
 ## Photos
-- [ ] **Owner / crew / truck photo** — `about.html` (currently reuses action.jpg)
+- Window-cleaning action shots added: `img/window-action.jpg`, `window-reach.jpg`,
+  `window-pole.jpg`, `window-side.jpg` — used on About, Services (#window-cleaning),
+  the homepage window card, and a Gallery "on the job" strip.
+- [ ] **House-washing photo** — Services #house-washing still uses a concrete
+      after-shot (`street-after.jpg`). Replace with a real siding/soft-wash photo.
+- [ ] **Owner / crew / truck photo** (optional) — About currently uses
+      `window-action.jpg`; swap if you have one you prefer.
 - [ ] **More before/after pairs** — `gallery.html` is built to hold a dozen+.
       Name each `img/<slug>-before.jpg` / `img/<slug>-after.jpg`, then copy one of
       the existing `.ba` blocks and swap the `src` + caption.
