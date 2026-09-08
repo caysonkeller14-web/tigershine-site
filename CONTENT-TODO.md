@@ -40,9 +40,9 @@ the text stops being highlighted.
 - [x] Christmas lights — Tiger Shine supplies the lights, bulbs, and timers;
       off-season storage included. Confirmed.
 - [ ] Do you bring your own water / power? (FAQ, both home + services page)
-- [ ] Does the customer need to be home? (services FAQ)
+- [x] Customer does not need to be home (except interior window cleaning).
 - [ ] Plant/pet safety specifics (services FAQ)
-- [ ] Accepted payment methods + timing / deposit policy (FAQ on both pages)
+- [x] Payment: check, Venmo, or cash, due on completion; no deposit for standard jobs.
 
 ## Photos
 - Crew photo (`img/team.jpg`) on the About page.
