@@ -27,10 +27,9 @@ the text stops being highlighted.
 - [x] **Homes-cleaned count** — confirmed as "200+" on the homepage stats row.
 
 ## Service area
-- [ ] **Exact towns you serve** — `services.html` (#service-area chips) and
-      `contact.html` info card. Currently: Auburn, Opelika, Lake Martin +
-      placeholder chips (Notasulga, Smiths Station, Loachapoka, Waverly, Salem,
-      Beauregard) — keep the real ones, delete the rest.
+- [x] **Towns served** — Auburn, Opelika, Lake Martin, Columbus (GA), Montgomery.
+      Updated on services (#service-area), contact info card, homepage contact
+      section, About, and the JSON-LD `areaServed`.
 
 ## Service details (confirm on `services.html`)
 - [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
@@ -39,9 +38,9 @@ the text stops being highlighted.
 - [x] Window cleaning — tracks/frames detailing and skylights/hard-to-reach glass: confirmed included.
 - [x] Christmas lights — Tiger Shine supplies the lights, bulbs, and timers;
       off-season storage included. Confirmed.
-- [ ] Do you bring your own water / power? (FAQ, both home + services page)
+- [x] Water/power — connects to an outdoor spigot; no electricity needed (gas-powered).
 - [x] Customer does not need to be home (except interior window cleaning).
-- [ ] Plant/pet safety specifics (services FAQ)
+- [x] Plant/pet safe — solutions are diluted and safe for landscaping and animals; pets stay inside during the job.
 - [x] Payment: check, Venmo, or cash, due on completion; no deposit for standard jobs.
 
 ## Photos
