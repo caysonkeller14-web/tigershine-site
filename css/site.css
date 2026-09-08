@@ -190,9 +190,11 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 /* ---------- service detail rows ---------- */
 .svc-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center;padding:clamp(2.4rem,5vw,3.6rem) 0;border-bottom:1px solid var(--rule)}
 .svc-row:last-child{border-bottom:0}
-@media(max-width:860px){.svc-row{grid-template-columns:1fr;gap:1.5rem}.svc-row .svc-media{order:-1}}
-.svc-row.flip .svc-media{order:2}
-@media(max-width:860px){.svc-row.flip .svc-media{order:-1}}
+.svc-row.flip .svc-media{order:-1}
+@media(max-width:860px){
+  .svc-row,.svc-row.flip{grid-template-columns:1fr;gap:1.5rem}
+  .svc-row .svc-media,.svc-row.flip .svc-media{order:-1}
+}
 .svc-media img{border-radius:6px;box-shadow:var(--shadow);width:100%;height:auto;max-height:440px;aspect-ratio:4/3;object-fit:cover}
 .svc-row h2{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.7rem}
 .svc-row .lede{margin-bottom:1.2rem}
@@ -324,10 +326,11 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
 .winter-only{display:none}
 body.season-winter .summer-only{display:none}
 body.season-winter .winter-only{display:block}
-.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
-.rv.in{opacity:1;transform:none}
+/* Content is visible by default; only the JS build hides it for the reveal. */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){
-  .rv{opacity:1;transform:none;transition:none}
+  .js .rv{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
   .card img,.grid-lights img{transition:none}
 }

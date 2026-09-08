@@ -42,8 +42,9 @@
 
   // Reveal on scroll
   var els = document.querySelectorAll('.rv');
+  function revealAll() { els.forEach(function (el) { el.classList.add('in'); }); }
   if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    els.forEach(function (el) { el.classList.add('in'); });
+    revealAll();
   } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
@@ -51,5 +52,9 @@
       });
     }, { rootMargin: '0px 0px -10% 0px' });
     els.forEach(function (el) { io.observe(el); });
+    // Failsafe: if the observer never fired for the first element, just show everything.
+    setTimeout(function () {
+      if (els.length && !els[0].classList.contains('in')) revealAll();
+    }, 2000);
   }
 })();
