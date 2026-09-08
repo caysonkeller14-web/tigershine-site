@@ -36,7 +36,7 @@ the text stops being highlighted.
 - [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
       where possible").
 - [x] House washing — plant pre-water/rinse claim removed (owner: not done).
-- [ ] Window cleaning — are tracks/frames included or an add-on? Skylights?
+- [x] Window cleaning — tracks/frames detailing and skylights/hard-to-reach glass: confirmed included.
 - [ ] Christmas lights — do you supply bulbs/timers or use customer's? Off-season
       storage included?
 - [ ] Do you bring your own water / power? (FAQ, both home + services page)
