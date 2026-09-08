@@ -24,7 +24,7 @@ the text stops being highlighted.
       have it (currently not linked).
 - [ ] **3–5 real testimonials** — name, town/neighborhood, job type — `index.html`
       testimonials section. Replace the placeholder quotes.
-- [ ] **Homes-cleaned count** — `index.html` stats row (currently "[200]+").
+- [x] **Homes-cleaned count** — confirmed as "200+" on the homepage stats row.
 
 ## Service area
 - [ ] **Exact towns you serve** — `services.html` (#service-area chips) and
