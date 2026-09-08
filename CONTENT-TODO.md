@@ -11,9 +11,9 @@ the text stops being highlighted.
 - [x] **Licensed & Insured** — NOT licensed or insured (owner confirmed 2026-09-08).
       All such claims removed; the slots now read "Free on-site estimates" /
       "Same-day replies". Re-add if that changes.
-- [ ] **Satisfaction guarantee** — confirm the real wording and the time window
-      (currently "[7 days]"). Appears in: `index.html` guarantee band + FAQ,
-      `services.html` FAQ. (Owner has not confirmed a guarantee — leave or remove.)
+- [x] **Satisfaction guarantee** — confirmed. "If it's not right, we make it right":
+      if you're unhappy with an area we cleaned, we come back and re-do it at no
+      charge. No time window stated (drop me a note if you want to add one).
 - [x] **Business hours** — no set hours (owner confirmed). Hours lines removed from
       every footer and the contact page.
 - [x] **Typical response time** — confirmed: "we usually reply the same day".
