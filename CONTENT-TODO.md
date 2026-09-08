@@ -37,8 +37,8 @@ the text stops being highlighted.
       where possible").
 - [x] House washing — plant pre-water/rinse claim removed (owner: not done).
 - [x] Window cleaning — tracks/frames detailing and skylights/hard-to-reach glass: confirmed included.
-- [ ] Christmas lights — do you supply bulbs/timers or use customer's? Off-season
-      storage included?
+- [x] Christmas lights — Tiger Shine supplies the lights, bulbs, and timers;
+      off-season storage included. Confirmed.
 - [ ] Do you bring your own water / power? (FAQ, both home + services page)
 - [ ] Does the customer need to be home? (services FAQ)
 - [ ] Plant/pet safety specifics (services FAQ)
