@@ -35,7 +35,7 @@ the text stops being highlighted.
 ## Service details (confirm on `services.html`)
 - [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
       where possible").
-- [ ] House washing — plant pre-water & rinse process
+- [x] House washing — plant pre-water/rinse claim removed (owner: not done).
 - [ ] Window cleaning — are tracks/frames included or an add-on? Skylights?
 - [ ] Christmas lights — do you supply bulbs/timers or use customer's? Off-season
       storage included?
