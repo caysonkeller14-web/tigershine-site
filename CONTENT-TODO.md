@@ -8,15 +8,15 @@ the text stops being highlighted.
 ## Business facts (used in several places)
 - [ ] **Founded / years in business** — `about.html`
 - [ ] **Owner name + short story** (3–4 sentences) — `about.html`
-- [ ] **Licensed & Insured** — confirm exact wording (e.g. "Licensed & insured in
-      Alabama", or "Fully insured"). Appears in: `index.html` stats row,
-      `about.html` values + trust band.
+- [x] **Licensed & Insured** — NOT licensed or insured (owner confirmed 2026-09-08).
+      All such claims removed; the slots now read "Free on-site estimates" /
+      "Same-day replies". Re-add if that changes.
 - [ ] **Satisfaction guarantee** — confirm the real wording and the time window
       (currently "[7 days]"). Appears in: `index.html` guarantee band + FAQ,
-      `services.html` FAQ.
-- [ ] **Business hours** — footer of every page, `contact.html` info card
-      (currently "[Mon–Sat, 8am–6pm]").
-- [ ] **Typical response time** — footer + `contact.html` (currently "same day").
+      `services.html` FAQ. (Owner has not confirmed a guarantee — leave or remove.)
+- [x] **Business hours** — no set hours (owner confirmed). Hours lines removed from
+      every footer and the contact page.
+- [x] **Typical response time** — confirmed: "we usually reply the same day".
 
 ## Reviews / social proof
 - [ ] **Google rating + review count** — `index.html` stats row ("4.9" / "[NN]").
@@ -33,7 +33,8 @@ the text stops being highlighted.
       Beauregard) — keep the real ones, delete the rest.
 
 ## Service details (confirm on `services.html`)
-- [ ] Pressure washing — do you treat rust / irrigation / battery stains?
+- [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
+      where possible").
 - [ ] House washing — plant pre-water & rinse process
 - [ ] Window cleaning — are tracks/frames included or an add-on? Skylights?
 - [ ] Christmas lights — do you supply bulbs/timers or use customer's? Off-season
@@ -56,9 +57,9 @@ the text stops being highlighted.
 - [ ] Neighborhood labels on the 3 existing gallery captions.
 
 ## After you have the info — also update
-- [ ] `index.html` JSON-LD block near the bottom: real `openingHours`, add your
-      Google Business Profile + any social URLs to `"sameAs"`, add `geo` if you
-      want a service radius.
+- [ ] `index.html` JSON-LD block near the bottom: add your Google Business Profile
+      + any social URLs to `"sameAs"`, add `geo` if you want a service radius.
+      (`openingHours` removed — add back only if you set hours.)
 - [ ] Decide: is the brand written "Tiger Shine" (two words, used now) or
       "Tigershine" (one word, older footer)? Currently standardized to "Tiger
       Shine" everywhere except the logo art.
