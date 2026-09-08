@@ -19,12 +19,11 @@ the text stops being highlighted.
 - [x] **Typical response time** — confirmed: "we usually reply the same day".
 
 ## Reviews / social proof
-- [ ] **Google rating + review count** — `index.html` stats row ("4.9" / "[NN]").
-- [ ] **Google Business Profile URL** — link the stars/review count to it once you
-      have it (currently not linked).
-- [ ] **3–5 real testimonials** — name, town/neighborhood, job type — `index.html`
-      testimonials section. Replace the placeholder quotes.
-- [x] **Homes-cleaned count** — confirmed as "200+" on the homepage stats row.
+- No Google reviews yet (coming soon). The homepage testimonials section and the
+  "4.9 / Google reviews" stat were REMOVED for now. When reviews exist:
+  re-add a testimonials section (CSS `.quotes/.quote/.stars` still in site.css)
+  and swap the "100% satisfaction" stat back to a rating + link to the profile.
+- [x] **Homes-cleaned count** — confirmed "200+" on the homepage stats row.
 
 ## Service area
 - [x] **Towns served** — Auburn, Opelika, Lake Martin, Columbus (GA), Montgomery.
@@ -53,7 +52,7 @@ the text stops being highlighted.
 - [ ] **More before/after pairs** — `gallery.html` is built to hold a dozen+.
       Name each `img/<slug>-before.jpg` / `img/<slug>-after.jpg`, then copy one of
       the existing `.ba` blocks and swap the `src` + caption.
-- [ ] Neighborhood labels on the 3 existing gallery captions.
+- [x] Gallery captions — owner does not want neighborhood labels; removed.
 
 ## After you have the info — also update
 - [ ] `index.html` JSON-LD block near the bottom: add your Google Business Profile
