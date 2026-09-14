@@ -195,7 +195,8 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
   .svc-row,.svc-row.flip{grid-template-columns:1fr;gap:1.5rem}
   .svc-row .svc-media,.svc-row.flip .svc-media{order:-1}
 }
-.svc-media img{border-radius:6px;box-shadow:var(--shadow);width:100%;height:auto;max-height:440px;aspect-ratio:4/3;object-fit:cover}
+.svc-media{display:flex;justify-content:center}
+.svc-media img{border-radius:6px;box-shadow:var(--shadow);width:auto;height:auto;max-width:100%;max-height:560px}
 .svc-row h2{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.7rem}
 .svc-row .lede{margin-bottom:1.2rem}
 .incl{list-style:none;padding:0;margin:0 0 1.4rem}
