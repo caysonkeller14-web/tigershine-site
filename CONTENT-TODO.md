@@ -30,10 +30,16 @@ the text stops being highlighted.
       Updated on services (#service-area), contact info card, homepage contact
       section, About, and the JSON-LD `areaServed`.
 
+## Services offered
+House washing / soft washing is NOT offered (owner removed it 2026-09-14) — it's
+gone from every page: the Services page (was service #2), the homepage service
+cards (now 3 cards, not 4), footers, meta/titles, the About "how we work" value
+card, and both FAQs' pressure-washing answers. Tiger Shine is now: pressure
+washing, window cleaning, Christmas lights.
+
 ## Service details (confirm on `services.html`)
 - [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
       where possible").
-- [x] House washing — plant pre-water/rinse claim removed (owner: not done).
 - [x] Window cleaning — tracks/frames detailing and skylights/hard-to-reach glass: confirmed included.
 - [x] Christmas lights — Tiger Shine supplies the lights, bulbs, and timers;
       off-season storage included. Confirmed.
@@ -47,8 +53,6 @@ the text stops being highlighted.
 - Window-cleaning action shots added: `img/window-action.jpg`, `window-reach.jpg`,
   `window-pole.jpg`, `window-side.jpg` — used on Services (#window-cleaning),
   the homepage window card, and a Gallery "on the job" strip.
-- [ ] **House-washing photo** — Services #house-washing still uses a concrete
-      after-shot (`street-after.jpg`). Replace with a real siding/soft-wash photo.
 - [ ] **More before/after pairs** — `gallery.html` is built to hold a dozen+.
       Name each `img/<slug>-before.jpg` / `img/<slug>-after.jpg`, then copy one of
       the existing `.ba` blocks and swap the `src` + caption.
