@@ -12,6 +12,7 @@
   --paper:#FFFFFF;
   --muted:#5F6459;
   --rule:rgba(27,68,51,.15);
+  --tint:rgba(27,68,51,.06); /* pale green wash, replaces flat cream fills */
   --wrap:1180px;
   --display:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -53,7 +54,7 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 .sec-head h2::after{content:"";display:block;width:54px;height:4px;background:var(--orange);margin-top:1.05rem;border-radius:2px}
 .sec-head.center h2::after{margin-left:auto;margin-right:auto}
 
-.tint{background:var(--cream);border-bottom:1px solid rgba(27,68,51,.13)}
+.tint{background:var(--tint);border-bottom:1px solid rgba(27,68,51,.13)}
 .paper{background:#fff}
 .ink-bg{background:var(--ink);color:#fff}
 .ink-bg h2,.ink-bg h3{color:#fff}
@@ -88,13 +89,15 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 }
 
 /* ---------- sub-page header ---------- */
-.subhero{background:var(--cream);padding:clamp(2.6rem,5vw,3.8rem) 0}
+.subhero{background:var(--ink);color:#fff;padding:clamp(2.6rem,5vw,3.8rem) 0}
 .subhero .eyebrow{margin-bottom:.7rem}
-.subhero h1{font-size:clamp(2.1rem,4.8vw,3.3rem);margin-bottom:.7rem}
-.subhero p{margin:0;max-width:56ch;color:var(--muted);font-size:1.06rem}
+.subhero h1{font-size:clamp(2.1rem,4.8vw,3.3rem);margin-bottom:.7rem;color:#fff}
+.subhero p{margin:0;max-width:56ch;color:rgba(255,255,255,.72);font-size:1.06rem}
 .crumbs{font-size:.8rem;color:var(--muted);margin-bottom:1rem;letter-spacing:.02em}
 .crumbs a{color:var(--muted);text-decoration:none}
 .crumbs a:hover{color:var(--ink)}
+.subhero .crumbs,.subhero .crumbs a{color:rgba(255,255,255,.62)}
+.subhero .crumbs a:hover{color:#fff}
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(2.8rem,6vw,4.8rem) 0 clamp(2.6rem,5vw,3.6rem);background:var(--cream)}
@@ -259,7 +262,7 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 .contact-cols .contact-form{margin:0;max-width:none;box-shadow:0 10px 30px rgba(27,68,51,.1);border:1px solid var(--rule)}
 .contact-cols .optin-legal{margin:1.1rem 0 0;color:var(--muted)}
 .contact-cols .optin-legal a{color:var(--orange-deep)}
-.info-card{background:var(--cream);border-radius:6px;padding:1.6rem 1.5rem}
+.info-card{background:var(--tint);border-radius:6px;padding:1.6rem 1.5rem}
 .info-card + .info-card{margin-top:1.1rem}
 .info-card h3{font-size:1rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.6rem}
 .info-card .big-call{font-family:var(--display);font-weight:900;font-size:1.6rem;color:var(--ink);text-decoration:none;letter-spacing:-.02em}
@@ -325,7 +328,7 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
 .legal .back:hover{color:var(--orange-deep)}
 
 /* ---------- centered message page (thank you / 404) ---------- */
-.msg{min-height:60vh;display:flex;align-items:center;background:var(--cream)}
+.msg{min-height:60vh;display:flex;align-items:center;background:var(--tint)}
 .msg .wrap{padding-top:clamp(3rem,8vw,5rem);padding-bottom:clamp(3rem,8vw,5rem);text-align:center}
 .msg h1{font-size:clamp(2rem,5vw,3.2rem);margin:.7rem 0 .6rem}
 .msg p{margin:0 auto 2rem;max-width:52ch;color:var(--muted);font-size:1.06rem}
