@@ -134,9 +134,8 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 .hero-cap{margin-top:.85rem;font-size:.83rem;color:rgba(255,255,255,.62);text-align:center}
 
 /* ---------- string-of-lights divider ---------- */
-.light-string{position:relative;height:32px;margin:0;display:flex;align-items:flex-start;justify-content:space-between;padding:0 6vw;overflow:hidden}
-.light-string::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:rgba(27,68,51,.32);border-radius:2px}
-.light-string.on-dark::before{background:rgba(255,255,255,.22)}
+.light-string{position:relative;height:32px;margin:0;display:flex;align-items:flex-start;justify-content:space-between;padding:0 6vw;overflow:hidden;background:var(--ink)}
+.light-string::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:var(--orange);border-radius:2px}
 .light-string .bulb{position:relative;top:5px;width:10px;height:14px;border-radius:50% 50% 45% 45%;flex:none;
   background:radial-gradient(circle at 35% 28%, #fff8e6 0%, var(--cream) 55%, var(--orange-deep) 100%);
   box-shadow:0 0 9px 2px rgba(242,103,10,.55), 0 0 2px rgba(255,255,255,.9) inset;
@@ -382,7 +381,7 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
   </div>
 </section>
 
-<div class="light-string on-dark" aria-hidden="true" style="background:var(--ink)">
+<div class="light-string" aria-hidden="true">
   <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
 </div>
 
