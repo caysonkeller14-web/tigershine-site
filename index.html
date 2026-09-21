@@ -182,18 +182,12 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 .tl-step p{margin:0;font-size:.88rem;color:var(--muted)}
 
 /* ---------- meet the team ---------- */
-.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1rem}
-@media(max-width:700px){.team-grid{grid-template-columns:1fr}}
-.team-photo{aspect-ratio:4/5;border-radius:8px;background:rgba(39,96,74,.12);border:2.5px dashed var(--green-mid);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--green-mid);text-align:center;padding:1rem}
-.team-photo svg{width:40px;height:40px}
-.team-photo .ph-label{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
-.team-photo .ph-file{font-size:.74rem;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.team-cap{margin-top:.75rem;text-align:center}
+.team-bio{max-width:68ch;margin:1.8rem auto 0;text-align:center;color:var(--muted)}
+.team-photo-wrap{max-width:420px;margin:2rem auto 0}
+.team-photo-wrap img{width:100%;height:auto;border-radius:8px;box-shadow:var(--shadow)}
+.team-cap{margin-top:1rem;text-align:center}
 .team-cap .name{display:block;font-family:var(--display);font-weight:800;font-size:1rem;color:var(--ink);text-transform:uppercase;letter-spacing:.01em}
 .team-cap .role{display:block;font-size:.85rem;color:var(--muted);margin-top:.1rem}
-.team-wide{aspect-ratio:16/9;border-radius:8px;background:rgba(39,96,74,.12);border:2.5px dashed var(--green-mid);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--green-mid);margin-top:1.6rem}
-.team-wide svg{width:44px;height:44px}
-.team-bio{max-width:68ch;margin:1.8rem auto 0;text-align:center;color:var(--muted)}
 
 /* ---------- contact ---------- */
 .contact{text-align:center;background:var(--orange);color:#fff}
@@ -426,35 +420,10 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
     <!-- TODO: rewrite this bio — placeholder copy, replace before the site goes live for the season -->
     <p class="team-bio rv">We're a small, local crew based right here in Auburn — we design, hang, and take down every string of lights ourselves. No subcontractors, no call center, just two guys who show up when we say we will.</p>
 
-    <div class="team-grid rv">
-      <div>
-        <!-- TODO: replace with <img src="/img/team-cayson.jpg" alt="..."> once the photo is ready -->
-        <div class="team-photo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.4"/></svg>
-          <span class="ph-label">Photo coming soon · 4:5</span>
-          <span class="ph-file">img/team-cayson.jpg</span>
-        </div>
-        <p class="team-cap"><span class="name">Cayson</span><span class="role">Owner</span></p>
-      </div>
-      <div>
-        <!-- TODO: replace with <img src="/img/team-partner.jpg" alt="..."> once the photo is ready -->
-        <div class="team-photo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.4"/></svg>
-          <span class="ph-label">Photo coming soon · 4:5</span>
-          <span class="ph-file">img/team-partner.jpg</span>
-        </div>
-        <!-- TODO: fill in partner's name and role -->
-        <p class="team-cap"><span class="name">[Partner name]</span><span class="role">[Role]</span></p>
-      </div>
+    <div class="team-photo-wrap rv">
+      <img src="/img/team-crew.jpg" alt="Cayson Keller and Henry Goldsmith of Tiger Shine standing together in front of a home in Auburn" width="933" height="1400">
     </div>
-
-    <!-- TODO: replace with <img src="/img/team-crew.jpg" alt="..."> once the photo is ready -->
-    <div class="team-wide rv">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.4"/></svg>
-      <span class="ph-label">Photo coming soon · 16:9</span>
-      <span class="ph-file">img/team-crew.jpg</span>
-    </div>
-    <p class="team-cap rv"><span class="name">The crew</span></p>
+    <p class="team-cap rv"><span class="name">Cayson Keller &amp; Henry Goldsmith</span></p>
   </div>
 </section>
 
