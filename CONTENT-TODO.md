@@ -1,72 +1,11 @@
-# Content to fill in
+# Content notes
 
-Everything below shows up on the site as an orange-highlighted `[bracketed]`
-placeholder. Search the repo for `class="ph"` or `[` to find each spot.
-Once you replace a placeholder, delete the `<span class="ph">…</span>` wrapper so
-the text stops being highlighted.
+Tiger Shine is Christmas-lights-only as of Oct 2026 — pressure washing and window
+cleaning were retired. The site is now a single page (index.html) plus privacy,
+thank-you, and 404. Old URLs (services, gallery, about, contact) 301-redirect to
+homepage sections via `_redirects`.
 
-## Business facts (used in several places)
-- [ ] **Founded / years in business** — `about.html`
-- [ ] **Owner name + short story** (3–4 sentences) — `about.html`
-- [x] **Licensed & Insured** — NOT licensed or insured (owner confirmed 2026-09-08).
-      All such claims removed; the slots now read "Free on-site estimates" /
-      "Same-day replies". Re-add if that changes.
-- [x] **Satisfaction guarantee** — confirmed. "If it's not right, we make it right":
-      if you're unhappy with an area we cleaned, we come back and re-do it at no
-      charge. No time window stated (drop me a note if you want to add one).
-- [x] **Business hours** — no set hours (owner confirmed). Hours lines removed from
-      every footer and the contact page.
-- [x] **Typical response time** — confirmed: "we usually reply the same day".
-
-## Reviews / social proof
-- No Google reviews yet (coming soon). The homepage testimonials section and the
-  "4.9 / Google reviews" stat were REMOVED for now. When reviews exist:
-  re-add a testimonials section (CSS `.quotes/.quote/.stars` still in site.css)
-  and swap the "100% satisfaction" stat back to a rating + link to the profile.
-- [x] **Homes-cleaned count** — confirmed "200+" on the homepage stats row.
-
-## Service area
-- [x] **Towns served** — Auburn, Opelika, Lake Martin, Columbus (GA), Montgomery.
-      Updated on services (#service-area), contact info card, homepage contact
-      section, About, and the JSON-LD `areaServed`.
-
-## Services offered
-House washing / soft washing is NOT offered (owner removed it 2026-09-14) — it's
-gone from every page: the Services page (was service #2), the homepage service
-cards (now 3 cards, not 4), footers, meta/titles, the About "how we work" value
-card, and both FAQs' pressure-washing answers. Tiger Shine is now: pressure
-washing, window cleaning, Christmas lights.
-
-## Service details (confirm on `services.html`)
-- [x] Pressure washing — rust / irrigation / battery stains: confirmed ("treated
-      where possible").
-- [x] Window cleaning — tracks/frames detailing and skylights/hard-to-reach glass: confirmed included.
-- [x] Christmas lights — Tiger Shine supplies the lights, bulbs, and timers;
-      off-season storage included. Confirmed.
-- [x] Water/power — connects to an outdoor spigot; no electricity needed (gas-powered).
-- [x] Customer does not need to be home (except interior window cleaning).
-- [x] Plant/pet safe — solutions are diluted and safe for landscaping and animals; pets stay inside during the job.
-- [x] Payment: check, Venmo, or cash, due on completion; no deposit for standard jobs.
-
-## Photos
-- Crew photo (`img/team.jpg`) on the About page.
-- Window-cleaning action shots added: `img/window-action.jpg`, `window-reach.jpg`,
-  `window-pole.jpg`, `window-side.jpg` — used on Services (#window-cleaning),
-  the homepage window card, and a Gallery "on the job" strip.
-- [ ] **More before/after pairs** — `gallery.html` is built to hold a dozen+.
-      Name each `img/<slug>-before.jpg` / `img/<slug>-after.jpg`, then copy one of
-      the existing `.ba` blocks and swap the `src` + caption.
-- [x] Gallery captions — owner does not want neighborhood labels; removed.
-
-## After you have the info — also update
-- [ ] `index.html` JSON-LD block near the bottom: add your Google Business Profile
-      + any social URLs to `"sameAs"`, add `geo` if you want a service radius.
-      (`openingHours` removed — add back only if you set hours.)
-- [ ] Decide: is the brand written "Tiger Shine" (two words, used now) or
-      "Tigershine" (one word, older footer)? Currently standardized to "Tiger
-      Shine" everywhere except the logo art.
-
-## Wordmark note
-The nav/footer show the logo image plus the text "Tiger Shine". If the logo
-artwork itself reads "Tigershine", that's fine — but pick one for the written
-text and I'll make it consistent.
+## Still to add
+- [ ] Google Business Profile share link → add to `sameAs` in index.html JSON-LD
+- [ ] Customer reviews section (6 Google reviews at 5.0 as of Oct 2026) — link to the profile
+- [ ] More install photos as the season goes (`img/lights-*.jpg`)

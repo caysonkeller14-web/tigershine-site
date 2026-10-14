@@ -1,0 +1,9 @@
+# Pressure washing & window cleaning retired Oct 2026 — send old URLs to the homepage
+/services.html   /   301
+/services        /   301
+/gallery.html    /#gallery   301
+/gallery         /#gallery   301
+/about.html      /#team   301
+/about           /#team   301
+/contact.html    /#contact   301
+/contact         /#contact   301

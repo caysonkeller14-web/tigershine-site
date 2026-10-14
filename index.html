@@ -166,6 +166,15 @@ section{padding:clamp(3.2rem,6.5vw,5.4rem) 0}
 .feature h3{font-size:1rem;margin-bottom:.35rem}
 .feature p{margin:0;font-size:.88rem;color:var(--muted)}
 
+/* ---------- FAQ ---------- */
+.faq{max-width:780px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--rule);padding:1.05rem 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;font-family:var(--display);font-weight:700;font-size:1.02rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:400;font-size:1.4rem;line-height:1;color:var(--orange);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:.8rem 0 0;color:var(--muted);font-size:.96rem}
+
 /* ---------- gallery (dark, glowing) ---------- */
 .grid-lights{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.4rem}
 .grid-lights figure{margin:0;border-radius:6px;overflow:hidden;aspect-ratio:4/3;background:#0f2419;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 18px 40px rgba(0,0,0,.5),0 0 46px rgba(242,103,10,.18)}
@@ -265,6 +274,7 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
       <a href="#gallery">Gallery</a>
       <a href="#how">How it works</a>
       <a href="#team">Our team</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-primary btn-sm nav-cta" href="tel:3345424044">Call 334-542-4044</a>
     </nav>
@@ -351,7 +361,6 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
         <p>Included with every job. We come back, take it all down, and haul it away.</p>
       </div>
     </div>
-    <p style="margin-top:1.6rem"><a href="/christmas-lights.html">Christmas light details &amp; FAQ &rarr;</a></p>
   </div>
 </section>
 
@@ -433,6 +442,45 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
   <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
 </div>
 
+<section id="faq" class="paper">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Good to know</p>
+      <h2>Christmas light <em>FAQ</em></h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>How much does Christmas light installation cost?</summary>
+        <p>It depends on your house — how much roofline, how many gables and peaks, and whether you want wreaths, garland, or shrubs and trees lit. Every quote is free. Call or text 334-542-4044, or send a photo of the front of your house and we'll come back with a design and a price.</p>
+      </details>
+      <details>
+        <summary>When should I book?</summary>
+        <p>As early as you can. Installation weekends fill up fast, and the earliest bookings get first pick of dates. Booking opens in the fall.</p>
+      </details>
+      <details>
+        <summary>Do I have to buy the lights?</summary>
+        <p>No. We supply the lights, clips, and timers, design the layout for your house, and install everything. You never buy, tangle, or store a box of lights.</p>
+      </details>
+      <details>
+        <summary>Is takedown included?</summary>
+        <p>Yes, with every job. We come back in January, take everything down, and haul it away — no extra call and no extra charge.</p>
+      </details>
+      <details>
+        <summary>What if a strand or bulb goes out during the season?</summary>
+        <p>Text us. In-season fixes are part of the service, so we come back and get it lit again.</p>
+      </details>
+      <details>
+        <summary>Do you hang Christmas lights at Lake Martin?</summary>
+        <p>Yes. We serve Lake Martin along with Auburn, Opelika, and the surrounding area, including Columbus, GA and Montgomery. If you're just outside that, call anyway — we often can.</p>
+      </details>
+      <details>
+        <summary>Do you use subcontractors?</summary>
+        <p>No. We're a small local crew based in Auburn. The two of us design, hang, and take down every job ourselves.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="contact">
   <div class="wrap">
     <p class="eyebrow">Get in touch</p>
@@ -501,11 +549,11 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
         <p>Auburn · Opelika · Lake Martin, AL</p>
       </div>
       <div class="foot-col">
-        <h4>More</h4>
-        <a href="/christmas-lights.html">Christmas lights FAQ</a>
-        <a href="/services.html">All services</a>
-        <a href="/gallery.html">Our work</a>
-        <a href="/about.html">About</a>
+        <h4>Explore</h4>
+        <a href="#services">What we do</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
       </div>
       <div class="foot-col">
         <h4>Get in touch</h4>
@@ -529,42 +577,107 @@ footer{background:var(--ink);border-top:4px solid var(--orange);color:rgba(255,2
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Tiger Shine",
-  "image": "https://tigershineservices.com/img/lights-hero.jpg",
-  "url": "https://tigershineservices.com/",
-  "telephone": "+1-334-542-4044",
-  "email": "contact@tigershineservices.com",
-  "areaServed": [
-    "Auburn, AL",
-    "Opelika, AL",
-    "Lake Martin, AL",
-    "Columbus, GA",
-    "Montgomery, AL"
-  ],
-  "description": "Christmas light design, installation, and takedown for homes in Auburn, Opelika, and Lake Martin, Alabama.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Auburn",
-    "addressRegion": "AL",
-    "addressCountry": "US"
-  },
-  "sameAs": [],
-  "logo": "https://tigershineservices.com/img/logo-brand.png",
-  "knowsAbout": [
-    "Christmas light installation",
-    "Holiday lighting",
-    "Pressure washing",
-    "Window cleaning"
-  ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Christmas light installation",
-      "url": "https://tigershineservices.com/christmas-lights.html"
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Tiger Shine",
+      "image": "https://tigershineservices.com/img/lights-hero.jpg",
+      "url": "https://tigershineservices.com/",
+      "telephone": "+1-334-542-4044",
+      "email": "contact@tigershineservices.com",
+      "areaServed": [
+        "Auburn, AL",
+        "Opelika, AL",
+        "Lake Martin, AL",
+        "Columbus, GA",
+        "Montgomery, AL"
+      ],
+      "description": "Christmas light design, installation, and takedown for homes in Auburn, Opelika, and Lake Martin, Alabama.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Auburn",
+        "addressRegion": "AL",
+        "addressCountry": "US"
+      },
+      "sameAs": [],
+      "logo": "https://tigershineservices.com/img/logo-brand.png",
+      "knowsAbout": [
+        "Christmas light installation",
+        "Holiday lighting",
+        "Christmas light takedown"
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Christmas light installation",
+          "serviceType": "Christmas light installation",
+          "description": "Custom Christmas light design, installation, in-season fixes, and January takedown."
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does Christmas light installation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your house \u2014 how much roofline, how many gables and peaks, and whether you want wreaths, garland, or shrubs and trees lit. Every quote is free. Call or text 334-542-4044, or send a photo of the front of your house and we'll come back with a design and a price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I book?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As early as you can. Installation weekends fill up fast, and the earliest bookings get first pick of dates. Booking opens in the fall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to buy the lights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We supply the lights, clips, and timers, design the layout for your house, and install everything. You never buy, tangle, or store a box of lights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is takedown included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with every job. We come back in January, take everything down, and haul it away \u2014 no extra call and no extra charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a strand or bulb goes out during the season?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Text us. In-season fixes are part of the service, so we come back and get it lit again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you hang Christmas lights at Lake Martin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve Lake Martin along with Auburn, Opelika, and the surrounding area, including Columbus, GA and Montgomery. If you're just outside that, call anyway \u2014 we often can."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you use subcontractors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We're a small local crew based in Auburn. The two of us design, hang, and take down every job ourselves."
+          }
+        }
+      ]
     }
-  }
+  ]
 }
 </script>
 <script>
